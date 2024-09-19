@@ -30,9 +30,9 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>An Impulse Ghost Fluid Method for Simulating Two-Phase Flows</b><br />
         <i>ACM Transactions on Graphics (SIGGRAPH Asia 2024)</i><br />
         <b>Yuchen Sun</b>, Linglai Chen, Weiyuan Zeng, Tao Du, Shiying Xiong, Bo Zhu<br />
-        <a nonsmooth="1" href="https://yuchen-sun-eecs.github.io/projects/igfm/static/pdfs/SIG_Asia_2024_Impulse_Two_Phase_Flow.pdf" class="">Paper</a>
+        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/igfm/static/pdfs/SIG_Asia_2024_Impulse_Two_Phase_Flow.pdf" class="">Paper</a>
         <a nonsmooth="1" href="https://www.youtube.com/watch?v=MbEyyH2UB3s" class="">Video</a>
-        <a nonsmooth="1" href="https://yuchen-sun-eecs.github.io/projects/igfm/" class="">Project Page</a>
+        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/igfm/" class="">Project Page</a>
       </div>
     </div>
     <br />
@@ -58,7 +58,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>A Material Point Method for Nonlinearly Magnetized Materials</b><br />
         <i>ACM Transactions on Graphics (SIGGRAPH Asia 2021)</i><br />
         <b>Yuchen Sun*</b>, Xingyu Ni*, Bo Zhu, Bin Wang, Baoquan Chen<br />
-        <a nonsmooth="1" href="https://yuchen-sun-eecs.github.io/projects/magnetic_mpm/static/pdfs/magnetic_mpm.pdf" class="">Paper</a>
+        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/magnetic_mpm/static/pdfs/magnetic_mpm.pdf" class="">Paper</a>
         <a nonsmooth="1" href="https://www.youtube.com/watch?v=2zqJ1wvverA" class="">Video</a>
       </div>
     </div>
