@@ -24,7 +24,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
   <div id='pubContainer'>
     <div id='paper'>
       <div>
-        <img id="paperimg" src="../images/neural_fluid.png" alt="igfm"/>
+        <img id="paperimg" src="../images/neural_fluid.png" alt="neural_fluid"/>
       </div>
       <div id='paperinfo'>
         <b>Neural Fluidic System Design and Control with Differentiable Simulation</b><br />
