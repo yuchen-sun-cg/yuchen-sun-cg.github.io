@@ -35,6 +35,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
       </div>
     </div>
     <br />
+    <div id='paper'>
       <div>
         <img id="paperimg" src="../images/igfm.jpg" alt="igfm"/>
       </div>
