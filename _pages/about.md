@@ -24,6 +24,18 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
   <div id='pubContainer'>
     <div id='paper'>
       <div>
+        <img id="paperimg" src="../images/neural_fluid.png" alt="igfm"/>
+      </div>
+      <div id='paperinfo'>
+        <b>Neural Fluidic System Design and Control with Differentiable Simulation</b><br />
+        <i>NeurIPS 2024</i><br />
+        Yifei Li, <b>Yuchen Sun</b>, Pingchuan Ma, Eftychios Sifakis, Tao Du, Bo Zhu, Wojciech Matusik<br />
+        <a nonsmooth="1" href="https://arxiv.org/abs/2405.14903" class="">Paper</a>
+        <a nonsmooth="1" href="https://people.csail.mit.edu/liyifei/publication/neuralfluid/" class="">Project Page</a>
+      </div>
+    </div>
+    <br />
+      <div>
         <img id="paperimg" src="../images/igfm.jpg" alt="igfm"/>
       </div>
       <div id='paperinfo'>
