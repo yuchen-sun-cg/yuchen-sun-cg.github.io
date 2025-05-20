@@ -24,6 +24,20 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
   <div id='pubContainer'>
     <div id='paper'>
       <div>
+        <img id="paperimg" src="../images/lfm.jpg" alt="lfm"/>
+      </div>
+      <div id='paperinfo'>
+        <b>Leapfrog Flow Maps for Real-Time Fluid Simulation</b><br />
+        <i>ACM Transactions on Graphics (SIGGRAPH 2025)</i><br />
+        <b>Yuchen Sun</b>, Junlin Li, Ruicheng Wang, Sinan Wang, Zhiqi Li, Bart. G. Van Bloemen Waanders, Bo Zhu<br />
+        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/igfm/static/pdfs/SIG_Asia_2024_Impulse_Two_Phase_Flow.pdf" class="">Paper</a>
+        <a nonsmooth="1" href="https://www.youtube.com/watch?v=-LK3ZDMByCE" class="">Video</a>
+        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/lfm/" class="">Project Page</a>
+      </div>
+    </div>
+    <br />
+    <div id='paper'>
+      <div>
         <img id="paperimg" src="../images/neural_fluid.png" alt="neural_fluid"/>
       </div>
       <div id='paperinfo'>
