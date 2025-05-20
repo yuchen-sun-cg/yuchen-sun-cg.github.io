@@ -15,7 +15,7 @@ redirect_from:
     #abstract{position:relative;border-top:1px solid gray;width:694px;display:none;margin-top:-1px;padding:10px;background:#f0f0f0!important;border-bottom-left-radius:5px;border-bottom-right-radius:5px;font-size:14px;color:#222}
 </style>
 
-Hi there, I’m Yuchen! I’m a CS PhD student at GaTech, advised by Prof. [Bo Zhu](https://faculty.cc.gatech.edu/~bozhu/). Before that, I obtained my BSc in CS from Peking University. I was fortunate to work with Prof. [Baoquan Chen](https://baoquanchen.info/) during my undergraduate research.
+Hi there, I’m Yuchen! I’m a CS PhD student at Georgia Tech, advised by Prof. [Bo Zhu](https://faculty.cc.gatech.edu/~bozhu/). Before that, I obtained my BSc in CS from Peking University. I was fortunate to work with Prof. [Baoquan Chen](https://baoquanchen.info/) during my undergraduate research.
 
 My research interest lies in Computer Graphics, especially in Physical Simulation. My main focus is to develop high-performance and high-fidelity numerical algorithms to solve computational challenges associated with various kinds of physical systems.
 
