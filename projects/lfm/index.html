@@ -58,15 +58,19 @@
                 <span class="author-block">
                   Yuchen Sun,</span></a>
               <span class="author-block">
-                Linglai Chen,</span></a>
-              <span class="author-block">
-                Weiyuan Zeng,</span></a>
-              <a href="https://people.iiis.tsinghua.edu.cn/~taodu/">
+                Junlin Li,</span></a>
+              <a href="https://wrc042.github.io/">
                 <span class="author-block">
-                  Tao Du,</span></a>
-              <a href="https://shiyingxiong.github.io/">
+                  Ruicheng Wang,</span></a>
+              <a href="https://sinanw.com/">
                 <span class="author-block">
-                  Shiying Xiong,</span></a>
+                  Sinan Wang,</span></a>
+              <a href="https://zhiqili-cg.github.io/">
+                <span class="author-block">
+                  Zhiqi Li,</span></a>
+              <a href="https://www.sandia.gov/ccr/staff/bart-g-van-bloemen-waanders/">
+                <span class="author-block">
+                  Bart. G. Van Bloemen Waanders,</span></a>
               <a href="https://faculty.cc.gatech.edu/~bozhu/">
                 <span class="author-block">
                   Bo Zhu</span></a>
@@ -138,10 +142,8 @@
         <img src="static/images/teaser.png" alt="Poster Dataset Distillation (PoDD)" class="center-image"
           style="max-width: 100%; height: auto;">
         <h2 class="subtitle has-text-centered">
-          Our Impulse Ghost Fluid Method preserves vortical structures and fluid volume across a broad spectrum of
-          two-phase vortical flow simulations. We present four illustrative snapshots from simulations utilizing this
-          method: a swinging fishtail viewed from above (left), rising bubbles in a tank (middle left), a rising bubble
-          ring hitting the liquid-air interface (middle right) and a pair of leapfrogging bubble rings (right).
+          Burning fire ball (left), delta wingtip vortices (middle left), helical trail behind a wind turbine (middle
+          right), two connecting vortex rings (right).
         </h2>
       </div>
     </div>
@@ -156,17 +158,14 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              This paper introduces a two-phase interfacial fluid model based on the impulse variable to capture complex
-              vorticity-interface interactions. Our key idea is to leverage bidirectional flow map theory to enhance the
-              transport accuracy of both vorticity and interfaces simultaneously and address their coupling within a
-              unified Eulerian framework. At the heart of our framework is an impulse ghost fluid method to solve the
-              two-phase incompressible fluid characterized by its interfacial dynamics. To deal with the
-              history-dependent jump of gauge variables across a dynamic interface, we develop a novel path integral
-              formula empowered by spatiotemporal buffers to convert the history-dependent jump condition into a
-              geometry-dependent jump condition when projecting impulse to velocity. We demonstrate the efficacy of our
-              approach in simulating and visualizing several interface-vorticity interaction problems with cross-phase
-              vortical evolution, including interfacial whirlpool, vortex ring reflection, and leapfrogging bubble
-              rings.
+              We propose Leapfrog Flow Maps (LFM) to simulate incompressible fluids with rich vortical flows in real
+              time. Our key idea is to use a hybrid velocity-impulse scheme enhanced with leapfrog method to reduce the
+              computational workload of impulse-based flow map methods, while possessing strong ability to preserve
+              vortical structures and fluid details. In order to accelerate the impulse-to-velocity projection, we
+              develop a fast matrix-free Algebraic Multigrid Preconditioned Conjugate Gradient (AMGPCG) solver with
+              customized GPU optimization, which makes projection comparable with impulse evolution in terms of time
+              cost. We demonstrate the performance of our method and its efficacy in a wide range of examples and
+              experiments, such as real-time simulated burning fire ball and delta wingtip vortices.
             </p>
           </div>
         </div>
@@ -193,7 +192,7 @@
 
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MbEyyH2UB3s"
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=-LK3ZDMByCE"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -209,14 +208,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title is-3">BibTeX</h2>
-      <pre><code>@article{sun2024igfm,
-        title={An Impulse Ghost Fluid Method for Simulating Two-Phase Flows},
-        author={Sun, Yuchen and Chen, Linglai and Zeng, Weiyuan and Du, Tao and Xiong, Shiying and Zhu, Bo},
+      <pre><code>@article{sun2025lfm,
+        title={Leapfrog Flow Maps for Real-Time Fluid Simulation},
+        author={Sun, Yuchen and Li, Junlin and Wang, Ruicheng and Wang, Sinan and Li, Zhiqi and Xiong, Shiying and Zhu, Bo},
         journal={ACM Transactions on Graphics (TOG)},
-        volume={43},
-        number={6},
+        volume={44},
+        number={4},
         pages={1--12},
-        year={2024},
+        year={2025},
         publisher={ACM New York, NY, USA}
       }</code></pre>
     </div>
