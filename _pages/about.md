@@ -39,6 +39,20 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
     <br />
     <div id='paper'>
       <div>
+        <img id="paperimg" src="../images/vpfm.jpg" alt="vpfm"/>
+      </div>
+      <div id='paperinfo'>
+        <b>Fluid Simulation on Vortex Particle Flow Maps</b><br />
+        <i>ACM Transactions on Graphics (SIGGRAPH 2025)</i><br />
+        Sinan Wang, Junwei Zhou, Fan Feng, Zhiqi Li, <b>Yuchen Sun</b>, Duowen Chen, Greg Turk, Bo Zhu<br />
+        <a nonsmooth="1" href="https://arxiv.org/pdf/2505.21946" class="">Paper</a>
+        <a nonsmooth="1" href="https://www.youtube.com/watch?v=8DukQvmr2EI" class="">Video</a>
+        <a nonsmooth="1" href="https://vpfm.sinanw.com/" class="">Project Page</a>
+      </div>
+    </div>
+    <br />
+    <div id='paper'>
+      <div>
         <img id="paperimg" src="../images/neural_fluid.png" alt="neural_fluid"/>
       </div>
       <div id='paperinfo'>
