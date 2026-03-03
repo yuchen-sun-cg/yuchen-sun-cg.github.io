@@ -24,6 +24,18 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
   <div id='pubContainer'>
     <div id='paper'>
       <div>
+        <img id="paperimg" src="../images/fmf.png" alt="lfm"/>
+      </div>
+      <div id='paperinfo'>
+        <b>Functional Mean Flow in Hilbert Space</b><br />
+        <i>CVPR 2026</i><br />
+        Zhiqi Li, <b>Yuchen Sun</b>, Greg Turk, Bo Zhu<br />
+        <a nonsmooth="1" href="https://arxiv.org/pdf/2511.12898" class="">Paper</a>
+      </div>
+    </div>
+    <br />
+    <div id='paper'>
+      <div>
         <img id="paperimg" src="../images/lfm.jpg" alt="lfm"/>
       </div>
       <div id='paperinfo'>
