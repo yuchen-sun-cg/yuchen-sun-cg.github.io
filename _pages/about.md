@@ -33,6 +33,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <a nonsmooth="1" href="https://arxiv.org/pdf/2602.02571" class="">Paper</a>
       </div>
     </div>
+    <br />
     <div id='paper'>
       <div>
         <img id="paperimg" src="../images/cfm.png" alt="cfm"/>
