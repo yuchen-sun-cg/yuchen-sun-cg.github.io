@@ -33,8 +33,17 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <a nonsmooth="1" href="https://arxiv.org/pdf/2602.02571" class="">Paper</a>
       </div>
     </div>
-    <br />
     <div id='paper'>
+      <div>
+        <img id="paperimg" src="../images/cfm.png" alt="cfm"/>
+      </div>
+      <div id='paperinfo'>
+        <b>A Few-Step Generative Model on Cumulative Flow Maps</b><br />
+        <i>ICML 2026</i><br />
+        Zhiqi Li*, Duowen Chen*, <b>Yuchen Sun*</b>, Bo Zhu<br />
+      </div>
+    </div>
+    <br />
     <div id='paper'>
       <div>
         <img id="paperimg" src="../images/fsi.jpg" alt="fsi"/>
