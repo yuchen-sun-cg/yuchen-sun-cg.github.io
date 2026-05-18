@@ -24,11 +24,24 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
   <div id='pubContainer'>
     <div id='paper'>
       <div>
+        <img id="paperimg" src="../images/efm.png" alt="efm"/>
+      </div>
+      <div id='paperinfo'>
+        <b>Trajectory Consistency for One-Step Generation on Euler Mean Flows</b><br />
+        <i>ICML 2026</i><br />
+        Zhiqi Li, <b>Yuchen Sun</b>, Duowen Chen, Jinjin He, Bo Zhu<br />
+        <a nonsmooth="1" href="https://arxiv.org/pdf/2602.02571" class="">Paper</a>
+      </div>
+    </div>
+    <br />
+    <div id='paper'>
+    <div id='paper'>
+      <div>
         <img id="paperimg" src="../images/fsi.jpg" alt="fsi"/>
       </div>
       <div id='paperinfo'>
         <b>Penetration-free Solid-Fluid Interaction on Shells and Rods</b><br />
-        <i>IEEE TVCG, 2026</i><br />
+        <i>IEEE TVCG 2026</i><br />
         <b>Yuchen Sun*</b>, Jinyuan Liu*, Yin Yang, Chenfanfu Jiang, Minchen Li, Bo Zhu<br />
         <a nonsmooth="1" href="https://arxiv.org/pdf/2505.12539" class="">Paper</a>
       </div>
