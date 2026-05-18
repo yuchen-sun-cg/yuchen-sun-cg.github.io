@@ -39,7 +39,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
       </div>
       <div id='paperinfo'>
         <b>A Few-Step Generative Model on Cumulative Flow Maps</b><br />
-        <i>ICML 2026</i><br />
+        <i>ACM Transactions on Graphics (SIGGRAPH 2026)</i><br />
         Zhiqi Li*, Duowen Chen*, <b>Yuchen Sun*</b>, Bo Zhu<br />
       </div>
     </div>
