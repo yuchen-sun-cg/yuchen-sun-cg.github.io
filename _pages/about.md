@@ -42,6 +42,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>A Few-Step Generative Model on Cumulative Flow Maps</b><br />
         <i>ACM Transactions on Graphics (SIGGRAPH 2026)</i><br />
         Zhiqi Li*, Duowen Chen*, <b>Yuchen Sun*</b>, Bo Zhu<br />
+        <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3811380" class="">Paper</a>
       </div>
     </div>
     <br />
@@ -53,7 +54,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>Penetration-free Solid-Fluid Interaction on Shells and Rods</b><br />
         <i>IEEE TVCG 2026</i><br />
         <b>Yuchen Sun*</b>, Jinyuan Liu*, Yin Yang, Chenfanfu Jiang, Minchen Li, Bo Zhu<br />
-        <a nonsmooth="1" href="https://arxiv.org/pdf/2505.12539" class="">Paper</a>
+        <a nonsmooth="1" href="https://www.computer.org/csdl/journal/tg/2026/07/11434881/2ePhjfoaPUk" class="">Paper</a>
       </div>
     </div>
     <br />
@@ -65,7 +66,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>Functional Mean Flow in Hilbert Space</b><br />
         <i>CVPR 2026</i><br />
         Zhiqi Li, <b>Yuchen Sun</b>, Greg Turk, Bo Zhu<br />
-        <a nonsmooth="1" href="https://arxiv.org/pdf/2511.12898" class="">Paper</a>
+        <a nonsmooth="1" href="https://openaccess.thecvf.com/content/CVPR2026/papers/Li_Functional_Mean_Flow_in_Hilbert_Space_CVPR_2026_paper.pdf" class="">Paper</a>
       </div>
     </div>
     <br />
@@ -77,7 +78,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>Leapfrog Flow Maps for Real-Time Fluid Simulation</b><br />
         <i>ACM Transactions on Graphics (SIGGRAPH 2025)</i><br />
         <b>Yuchen Sun</b>, Junlin Li, Ruicheng Wang, Sinan Wang, Zhiqi Li, Bart G. Van Bloemen Waanders, Bo Zhu<br />
-        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/lfm/static/pdfs/SIG_2025_Leapfrog_Flow_Maps.pdf" class="">Paper</a>
+        <a nonsmooth="1" href="https://dl.acm.org/doi/abs/10.1145/3731180" class="">Paper</a>
         <a nonsmooth="1" href="https://github.com/yuchen-sun-cg/lfm" class="">Code</a>
         <a nonsmooth="1" href="https://www.youtube.com/watch?v=-LK3ZDMByCE" class="">Video</a>
         <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/lfm/" class="">Project Page</a>
@@ -92,7 +93,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>Fluid Simulation on Vortex Particle Flow Maps</b><br />
         <i>ACM Transactions on Graphics (SIGGRAPH 2025)</i><br />
         Sinan Wang, Junwei Zhou, Fan Feng, Zhiqi Li, <b>Yuchen Sun</b>, Duowen Chen, Greg Turk, Bo Zhu<br />
-        <a nonsmooth="1" href="https://arxiv.org/pdf/2505.21946" class="">Paper</a>
+        <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3731198" class="">Paper</a>
         <a nonsmooth="1" href="https://github.com/pfm-gatech/VPFM" class="">Code</a>
         <a nonsmooth="1" href="https://www.youtube.com/watch?v=8DukQvmr2EI" class="">Video</a>
         <a nonsmooth="1" href="https://vpfm.sinanw.com/" class="">Project Page</a>
@@ -107,7 +108,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>Neural Fluidic System Design and Control with Differentiable Simulation</b><br />
         <i>NeurIPS 2024</i><br />
         Yifei Li, <b>Yuchen Sun</b>, Pingchuan Ma, Eftychios Sifakis, Tao Du, Bo Zhu, Wojciech Matusik<br />
-        <a nonsmooth="1" href="https://arxiv.org/abs/2405.14903" class="">Paper</a>
+        <a nonsmooth="1" href="https://dl.acm.org/doi/10.5555/3737916.3740613" class="">Paper</a>
         <a nonsmooth="1" href="https://people.csail.mit.edu/liyifei/publication/neuralfluid/" class="">Project Page</a>
       </div>
     </div>
@@ -120,7 +121,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>An Impulse Ghost Fluid Method for Simulating Two-Phase Flows</b><br />
         <i>ACM Transactions on Graphics (SIGGRAPH Asia 2024)</i><br />
         <b>Yuchen Sun</b>, Linglai Chen, Weiyuan Zeng, Tao Du, Shiying Xiong, Bo Zhu<br />
-        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/igfm/static/pdfs/SIG_Asia_2024_Impulse_Two_Phase_Flow.pdf" class="">Paper</a>
+        <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3687963" class="">Paper</a>
         <a nonsmooth="1" href="https://www.youtube.com/watch?v=MbEyyH2UB3s" class="">Video</a>
         <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/igfm/" class="">Project Page</a>
       </div>
@@ -134,7 +135,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>Eulerian-Lagrangian Fluid Simulation on Particle Flow Maps</b><br />
         <i>ACM Transactions on Graphics (SIGGRAPH 2024)</i><br />
         Junwei Zhou, Duowen Chen, Molin Deng, Yitong Deng, <b>Yuchen Sun</b>, Sinan Wang, Shiying Xiong, Bo Zhu<br />
-        <a nonsmooth="1" href="https://www.arxiv.org/pdf/2405.09672" class="">Paper</a>
+        <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3658180" class="">Paper</a>
         <a nonsmooth="1" href="https://www.youtube.com/watch?v=aErgFhxil7o" class="">Video</a>
         <a nonsmooth="1" href="https://zjw49246.github.io/projects/pfm/" class="">Project Page</a>
       </div>
@@ -148,7 +149,7 @@ My research interest lies in Computer Graphics, especially in Physical Simulatio
         <b>A Material Point Method for Nonlinearly Magnetized Materials</b><br />
         <i>ACM Transactions on Graphics (SIGGRAPH Asia 2021)</i><br />
         <b>Yuchen Sun*</b>, Xingyu Ni*, Bo Zhu, Bin Wang, Baoquan Chen<br />
-        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/magnetic_mpm/static/pdfs/magnetic_mpm.pdf" class="">Paper</a>
+        <a nonsmooth="1" href="https://dl.acm.org/doi/abs/10.1145/3478513.3480541" class="">Paper</a>
         <a nonsmooth="1" href="https://www.youtube.com/watch?v=2zqJ1wvverA" class="">Video</a>
       </div>
     </div>
