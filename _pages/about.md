@@ -17,7 +17,7 @@ redirect_from:
 
 Hi there, I’m Yuchen! I’m a CS PhD student at Georgia Tech, advised by Prof. [Bo Zhu](https://faculty.cc.gatech.edu/~bozhu/). Before that, I obtained my BSc in CS from Peking University. I was fortunate to work with Prof. [Baoquan Chen](https://baoquanchen.info/) during my undergraduate research.
 
-My research interest lies in Computer Graphics, especially in Physical Simulation. My main focus is to develop high-performance and high-fidelity numerical algorithms to solve computational challenges associated with various kinds of physical systems.
+My research interest lies in Computational Modeling. My main focus is to develop high-performance and high-fidelity numerical algorithms to solve computational challenges associated with various kinds of physical systems.
 
 ## Research
 <p>
