@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPUPhysBench — GPU Physics Simulation Benchmark</title>
+  <meta name="description" content="GPUPhysBench evaluates coding agents on 50 GPU physics simulation tasks, measuring numerical correctness and efficiency against expert-optimized CUDA references.">
+  <meta name="author" content="Yuchen Sun, Jinjin He, Sinan Wang, Bo Zhu">
+  <meta name="theme-color" content="#245bb2">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation">
+  <meta property="og:description" content="50 physics simulation tasks. Six coding systems. How close are agents to expert GPU performance?">
+  <link rel="canonical" href="https://yuchen-sun-cg.github.io/projects/gpuphysbench/">
+  <meta property="og:url" content="https://yuchen-sun-cg.github.io/projects/gpuphysbench/">
+  <meta property="og:image" content="https://yuchen-sun-cg.github.io/projects/gpuphysbench/assets/overview.png">
+  <meta property="og:image:alt" content="GPUPhysBench benchmark overview">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GPUPhysBench">
+  <meta name="twitter:description" content="Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation">
+  <meta name="twitter:image" content="https://yuchen-sun-cg.github.io/projects/gpuphysbench/assets/overview.png">
+  <meta name="citation_title" content="GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation">
+  <meta name="citation_author" content="Sun, Yuchen">
+  <meta name="citation_author" content="He, Jinjin">
+  <meta name="citation_author" content="Wang, Sinan">
+  <meta name="citation_author" content="Zhu, Bo">
+  <meta name="citation_publication_date" content="2026/09/28">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2609.35639">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="hero" id="top">
+    <div class="container">
+      <p class="eyebrow">GPU PHYSICS · CODING AGENTS · BENCHMARK</p>
+      <h1><span class="project-name">GPUPhysBench</span><span class="paper-title">Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</span></h1>
+      <p class="authors"><a href="https://yuchen-sun-cg.github.io/">Yuchen Sun</a><span>,</span> <a href="https://jinjinhe2001.github.io/">Jinjin He</a><span>,</span> <a href="https://sinanw.com/">Sinan Wang</a><span>,</span> <a href="https://faculty.cc.gatech.edu/~bozhu/">Bo Zhu</a></p>
+      <p class="affiliation">Georgia Institute of Technology</p>
+      <nav class="paper-links" aria-label="Paper resources">
+        <a class="button primary" href="https://arxiv.org/abs/2609.35639">arXiv <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container teaser" aria-labelledby="teaser-title">
+      <h2 id="teaser-title" class="teaser-title">Can coding agents make physics run fast?</h2>
+      <p class="lead">From individual CUDA operators to complete simulators,<br class="desktop-break"> GPUPhysBench tests both numerical correctness and GPU efficiency.</p>
+      <figure>
+        <div class="simulation-grid">
+          <figure><img src="assets/vortex_ring_2.jpg" width="800" height="600" alt="Two interacting vortex rings in a fluid simulation"><figcaption>Vortex-ring collision <span>Fluid dynamics</span></figcaption></figure>
+          <figure><img src="assets/water_drop_1.jpg" width="800" height="600" alt="Water drop simulated with the PIC/FLIP reference"><figcaption>Water drop <span>PIC/FLIP</span></figcaption></figure>
+          <figure><img src="assets/karman_teaser.jpg" width="800" height="600" alt="Vortices forming downstream of an obstacle"><figcaption>Kármán vortex street <span>Stable fluids</span></figcaption></figure>
+          <figure><img src="assets/jelly_teaser.jpg" width="800" height="600" alt="Deforming jelly cube simulated with explicit FEM"><figcaption>Jelly cube <span>Deformable solids</span></figcaption></figure>
+          <figure><img src="assets/snowball_3.jpg" width="800" height="600" alt="Snowball deformation simulated with the material point method"><figcaption>Snowball <span>Material point method</span></figcaption></figure>
+          <figure><img src="assets/cloth_3.jpg" width="800" height="600" alt="Cloth draped over a sphere using XPBD"><figcaption>Cloth on a sphere <span>Constraint dynamics</span></figcaption></figure>
+        </div>
+        <figcaption class="caption">Multi-step simulations driven by the benchmark’s <strong>expert reference implementations</strong>. These scenes illustrate the physical workloads; they are not agent-generated results.</figcaption>
+      </figure>
+    </section>
+
+    <section class="band" id="abstract">
+      <div class="container reading-width">
+        <h2>Abstract</h2>
+        <p>Writing fast GPU code for physical simulation is difficult: implementations must preserve numerical accuracy while handling irregular data access, synchronization, and iterative solvers. We introduce GPUPhysBench, a benchmark of 50 tasks testing whether coding agents can meet these demands. Tasks cover fluids, deformable solids, and granular materials, from individual simulation operators to complete simulators.</p>
+        <p>Agents write, compile, test, and optimize GPU code with access to a NVIDIA GPU under fixed time budgets. We report pass rates and runtime performance relative to expert-optimized reference implementations. In a single-attempt evaluation of six frontier model-harness pairs, the two strongest pass all 50 tasks, but even the fastest reaches at least 0.9× the reference speed on only 22% of them, and no submission is more than 5% faster than the reference.</p>
+        <p>The largest gaps arise in collision detection, constraint solving, and iterative solvers. GPUPhysBench brings physical simulation workloads to coding-agent evaluation, testing both the ability to implement numerical methods correctly and the ability to make them run efficiently.</p>
+      </div>
+    </section>
+
+    <section class="container section" id="benchmark">
+      <p class="eyebrow">THE BENCHMARK</p>
+      <h2>Evaluation Pipeline</h2>
+      <p class="section-intro">Agents implement a prescribed numerical method, then compile, test, and optimize it with access to a GPU. Expert references and correctness evaluators are withheld during development.</p>
+      <figure class="overview">
+        <a href="assets/overview.pdf" aria-label="Open the full-resolution benchmark overview PDF"><img src="assets/overview.png" width="3024" height="1124" loading="lazy" alt="GPUPhysBench overview showing task coverage, the coding-agent development workflow, and evaluation of correctness, compliance, and runtime"></a>
+        <figcaption class="caption">GPUPhysBench evaluation pipeline. Click the figure for the full-resolution PDF.</figcaption>
+      </figure>
+      <div class="method-grid">
+        <div><span class="step">01 / IMPLEMENT</span><h3>A specified physical computation</h3><p>Prompts define the method, discretization, boundary conditions, inputs, outputs, and accuracy requirements. Agents implement CUDA code in a fixed interface.</p></div>
+        <div><span class="step">02 / OPTIMIZE</span><h3>A fixed development budget</h3><p>30 minutes for operators and 60 minutes for full simulators, including compilation, testing, and optimization.</p></div>
+        <div><span class="step">03 / EVALUATE</span><h3>Correctness and efficiency</h3><p>Numerical checks use public and hidden inputs. Passing submissions must also satisfy execution rules; runtime is compared with expert references.</p></div>
+      </div>
+    </section>
+
+    <section class="band" id="results">
+      <div class="container">
+        <p class="eyebrow">MAIN RESULTS</p>
+        <h2>Correctness is within reach.<br>Expert-level efficiency remains difficult.</h2>
+        <p class="section-intro">The two strongest systems pass every task. Even the fastest system exceeds 0.9× reference speed on only 22% of tasks under the default budget.</p>
+        <div class="table-wrap" role="region" aria-label="Main benchmark results; scroll horizontally on small screens" tabindex="0">
+          <table>
+            <caption>Single attempt per task · 50 tasks · default time budget</caption>
+            <thead><tr><th scope="col">Model</th><th scope="col">Harness</th><th scope="col">Correctness ↑</th><th scope="col">Pass rate ↑</th><th scope="col">fast<sub>0.5</sub> ↑</th><th scope="col">fast<sub>0.9</sub> ↑</th><th scope="col">fast<sub>1.05</sub> ↑</th></tr></thead>
+            <tbody>
+              <tr class="best"><th scope="row">Claude-Opus-5</th><td>Claude Code</td><td><strong>100%</strong></td><td><strong>100%</strong></td><td><strong>66%</strong></td><td><strong>22%</strong></td><td>0%</td></tr>
+              <tr><th scope="row">GPT-5.6-Sol</th><td>Codex CLI</td><td><strong>100%</strong></td><td><strong>100%</strong></td><td>42%</td><td>16%</td><td>0%</td></tr>
+              <tr><th scope="row">Gemini-3.5-Flash</th><td>Gemini CLI</td><td>88%</td><td>88%</td><td>28%</td><td>16%</td><td>0%</td></tr>
+              <tr><th scope="row">DeepSeek-V4.1-Flash</th><td>DeepSeek Harness</td><td>86%</td><td>86%</td><td>38%</td><td>16%</td><td>0%</td></tr>
+              <tr><th scope="row">Qwen-3.8-Max</th><td>Qwen Code</td><td>52%</td><td>52%</td><td>34%</td><td>14%</td><td>0%</td></tr>
+              <tr><th scope="row">GLM-5.3</th><td>OpenCode</td><td>88%</td><td>86%</td><td>34%</td><td>16%</td><td>0%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="caption"><strong>Reading the metrics.</strong> Correctness counts tasks passing numerical checks. Pass rate additionally requires audit compliance. fast<sub>p</sub> is the fraction of all 50 tasks that pass and achieve <em>t</em><sub>reference</sub> / <em>t</em><sub>agent</sub> &gt; <em>p</em>; failed tasks remain in the denominator. Results evaluate model–harness pairs.</p>
+        <aside class="finding"><strong>No passing submission beats the reference by more than 5% in the main evaluation.</strong><p>This finding applies to the single-attempt, default-budget setting. Longer budgets and additional attempts produce some wins; see the paper’s ablations.</p></aside>
+      </div>
+    </section>
+
+    <section class="container section" id="categories">
+      <p class="eyebrow">WHERE THE GAP REMAINS</p>
+      <h2>Regular local work is easier than global coordination</h2>
+      <p class="section-intro">Agents perform best on local grid and lattice computations. Collision detection, constraint solving, and global iterative solves leave larger performance gaps.</p>
+      <div class="chart-grid">
+        <figure><img src="assets/grid_local.svg" loading="lazy" alt="Geometric mean speedups for local grid and lattice tasks, with passing task counts"><figcaption>Local grid and lattice computations</figcaption></figure>
+        <figure><img src="assets/particle_grid.svg" loading="lazy" alt="Geometric mean speedups for particle-grid methods, with passing task counts"><figcaption>Particle-grid methods</figcaption></figure>
+        <figure><img src="assets/explicit_interaction.svg" loading="lazy" alt="Geometric mean speedups for local interaction updates, with passing task counts"><figcaption>Local interaction updates</figcaption></figure>
+        <figure><img src="assets/position_constraint.svg" loading="lazy" alt="Geometric mean speedups for position constraint solving, with passing task counts"><figcaption>Position constraint solving</figcaption></figure>
+        <figure><img src="assets/geometry.svg" loading="lazy" alt="Geometric mean speedups for geometric queries and collision detection, with passing task counts"><figcaption>Geometric queries and collision detection</figcaption></figure>
+        <figure><img src="assets/global_solve.svg" loading="lazy" alt="Geometric mean speedups for global solves and pressure projection, with passing task counts"><figcaption>Global solves and pressure projection</figcaption></figure>
+      </div>
+      <p class="caption">Geometric mean speedup relative to expert references on hidden inputs, computed over each system’s <strong>passing tasks</strong> in each category. Labels show means and passing-task counts; averages can cover different task subsets. Axis scales are shared across panels.</p>
+    </section>
+
+    <section class="band" id="citation">
+      <div class="container reading-width">
+        <div class="citation-heading"><h2>BibTeX</h2><button id="copy-bibtex" class="button" type="button" hidden>Copy citation</button></div>
+        <pre><code id="bibtex">@misc{sun2026gpuphysbench,
+  title={GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation},
+  author={Yuchen Sun and Jinjin He and Sinan Wang and Bo Zhu},
+  year={2026},
+  eprint={2609.35639},
+  archivePrefix={arXiv},
+  primaryClass={cs.DC},
+  url={https://arxiv.org/abs/2609.35639}
+}</code></pre>
+        <p id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+  <footer class="container"><p>GPUPhysBench · Georgia Institute of Technology · 2026</p><p>Page layout inspired by <a href="https://jinjinhe2001.github.io/nhmo/">NHMO</a>. Figures and results from <a href="https://arxiv.org/abs/2609.35639">the paper</a>.</p><p><a href="../../">Yuchen Sun’s homepage</a></p><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

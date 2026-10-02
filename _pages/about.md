@@ -22,6 +22,19 @@ My research interest lies in Computational Modeling. My main focus is to develop
 ## Research
 <p>
   <div id='pubContainer'>
+    <div id='paper' style="display: flow-root;">
+      <div>
+        <img id="paperimg" src="/projects/gpuphysbench/assets/water_drop_1.jpg" alt="GPUPhysBench water drop simulation"/>
+      </div>
+      <div id='paperinfo'>
+        <b>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</b><br />
+        <i>arXiv 2026</i><br />
+        <b>Yuchen Sun</b>, Jinjin He, Sinan Wang, Bo Zhu<br />
+        <a nonsmooth="1" href="https://arxiv.org/abs/2609.35639" class="">arXiv</a>
+        <a nonsmooth="1" href="/projects/gpuphysbench/" class="">Project Page</a>
+      </div>
+    </div>
+    <br />
     <div id='paper'>
       <div>
         <img id="paperimg" src="../images/efm.png" alt="efm"/>
