@@ -24,14 +24,54 @@ My research interest lies in Computational Modeling. My main focus is to develop
   <div id='pubContainer'>
     <div id='paper' style="display: flow-root;">
       <div>
-        <img id="paperimg" src="/projects/gpuphysbench/assets/water_drop_1.jpg" alt="GPUPhysBench water drop simulation"/>
+        <img id="paperimg" src="/images/gpuphysbench-simulations.svg" alt="GPUPhysBench reference simulations in two rows and three columns: vortex rings, water drop, vortex street, jelly, snowball, and cloth"/>
       </div>
       <div id='paperinfo'>
         <b>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</b><br />
         <i>arXiv 2026</i><br />
         <b>Yuchen Sun</b>, Jinjin He, Sinan Wang, Bo Zhu<br />
-        <a nonsmooth="1" href="https://arxiv.org/abs/2609.35639" class="">arXiv</a>
+        <a nonsmooth="1" href="https://arxiv.org/abs/2609.35639" class="">Paper</a>
         <a nonsmooth="1" href="/projects/gpuphysbench/" class="">Project Page</a>
+      </div>
+    </div>
+    <br />
+    <div id='paper' style="display: flow-root;">
+      <div>
+        <img id="paperimg" src="/images/nhmo.jpg" alt="Neural Harmonic Measure Operator overview"/>
+      </div>
+      <div id='paperinfo'>
+        <b>Neural Harmonic Measure Operator</b><br />
+        <i>NeurIPS 2026</i><br />
+        Jinjin He, Sinan Wang, <b>Yuchen Sun</b>, Bo Zhu<br />
+        <a nonsmooth="1" href="https://arxiv.org/pdf/2609.35752" class="">Paper</a>
+        <a nonsmooth="1" href="https://github.com/jinjinhe2001/NHMO-Neural-Harmonic-Measure-Operator" class="">Code</a>
+        <a nonsmooth="1" href="https://jinjinhe2001.github.io/nhmo/" class="">Project Page</a>
+      </div>
+    </div>
+    <br />
+    <div id='paper' style="display: flow-root;">
+      <div>
+        <img id="paperimg" src="/images/hamiltonian-waves.jpg" alt="Coupled nonlinear surface waves and three-dimensional fluid flow"/>
+      </div>
+      <div id='paperinfo'>
+        <b>Hamiltonian Two-Way Coupling of Nonlinear Waves and 3D Flows</b><br />
+        <i>ACM Transactions on Graphics (SIGGRAPH Asia 2026)</i><br />
+        Sinan Wang*, Ruicheng Wang*, Taiyuan Zhang, Fan Feng, Jinjin He, <b>Yuchen Sun</b>, Zhiqi Li, Bo Zhu<br />
+        <a nonsmooth="1" href="https://arxiv.org/pdf/2608.25203" class="">Paper</a>
+        <a nonsmooth="1" href="https://github.com/swang3081/Hamiltonian-Two-Way-Coupling-of-Nonlinear-Waves-and-3D-Flows" class="">Code</a>
+        <a nonsmooth="1" href="https://youtu.be/4OmikmRc6VI" class="">Video</a>
+        <a nonsmooth="1" href="https://hamwave.sinanw.com/" class="">Project Page</a>
+      </div>
+    </div>
+    <br />
+    <div id='paper' style="display: flow-root;">
+      <div>
+        <img id="paperimg" src="/images/long-short-flow-maps.jpg" alt="Image generation results using unified long-short flow maps"/>
+      </div>
+      <div id='paperinfo'>
+        <b>Unified Long-Short Flow Maps for Fast Generation</b><br />
+        <i>SIGGRAPH Asia 2026 (Conference Papers)</i><br />
+        Zhiqi Li, Jinjin He, Duowen Chen, Ruicheng Wang, Shenyifan Lu, Yuxuan Liao, <b>Yuchen Sun</b>, Sinan Wang, Bo Zhu<br />
       </div>
     </div>
     <br />
