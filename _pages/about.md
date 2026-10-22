@@ -14,7 +14,7 @@ redirect_from:
     #paperinfo a{text-decoration:none;font-weight:700;}
     #abstract{position:relative;border-top:1px solid gray;width:694px;display:none;margin-top:-1px;padding:10px;background:#f0f0f0!important;border-bottom-left-radius:5px;border-bottom-right-radius:5px;font-size:14px;color:#222}
     .pub-tabs{display:flex;gap:4px;border-bottom:1px solid #ccc;margin-top:30px;}
-    .pub-tab{background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;padding:8px 14px;font-size:16px;color:#666;cursor:pointer;}
+    .pub-tab{background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;padding:8px 14px;font-size:20px;color:#666;cursor:pointer;}
     .pub-tab:hover{color:#222;}
     .pub-tab.active{color:#222;font-weight:700;border-bottom-color:#222;}
     .pub-panel{display:none;}
