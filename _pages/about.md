@@ -13,7 +13,7 @@ redirect_from:
     #paper #paperinfo{margin:0;padding:0;border:0;font-size:15px;}
     #paperinfo a{text-decoration:none;font-weight:700;}
     #abstract{position:relative;border-top:1px solid gray;width:694px;display:none;margin-top:-1px;padding:10px;background:#f0f0f0!important;border-bottom-left-radius:5px;border-bottom-right-radius:5px;font-size:14px;color:#222}
-    .pub-tabs{display:flex;gap:4px;border-bottom:1px solid #ccc;margin-top:10px;}
+    .pub-tabs{display:flex;gap:4px;border-bottom:1px solid #ccc;margin-top:30px;}
     .pub-tab{background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;padding:8px 14px;font-size:16px;color:#666;cursor:pointer;}
     .pub-tab:hover{color:#222;}
     .pub-tab.active{color:#222;font-weight:700;border-bottom-color:#222;}
@@ -25,7 +25,6 @@ Hi there, I’m Yuchen! I’m a CS PhD student at Georgia Tech, advised by Prof.
 
 My research focuses on high-performance computing for computer graphics, spanning physics-based simulation, generative AI, and AI agents. I develop efficient numerical algorithms and GPU systems for real-time simulation and fast generation, and study how AI agents can build correct and efficient high-performance graphics code.
 
-## Research
 <div class='pub-tabs'>
   <button type='button' class='pub-tab active' data-target='pub-selected'>Selected Publications</button>
   <button type='button' class='pub-tab' data-target='pub-all'>All Publications</button>
