@@ -13,198 +13,259 @@ redirect_from:
     #paper #paperinfo{margin:0;padding:0;border:0;font-size:15px;}
     #paperinfo a{text-decoration:none;font-weight:700;}
     #abstract{position:relative;border-top:1px solid gray;width:694px;display:none;margin-top:-1px;padding:10px;background:#f0f0f0!important;border-bottom-left-radius:5px;border-bottom-right-radius:5px;font-size:14px;color:#222}
+    .pub-tabs{display:flex;gap:4px;border-bottom:1px solid #ccc;margin-top:10px;}
+    .pub-tab{background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;padding:8px 14px;font-size:16px;color:#666;cursor:pointer;}
+    .pub-tab:hover{color:#222;}
+    .pub-tab.active{color:#222;font-weight:700;border-bottom-color:#222;}
+    .pub-panel{display:none;}
+    .pub-panel.active{display:block;}
 </style>
 
 Hi there, I’m Yuchen! I’m a CS PhD student at Georgia Tech, advised by Prof. [Bo Zhu](https://faculty.cc.gatech.edu/~bozhu/). Before that, I obtained my BSc in CS from Peking University. I was fortunate to work with Prof. [Baoquan Chen](https://baoquanchen.info/) during my undergraduate research.
 
-My research interest lies in Computational Modeling. My main focus is to develop high-performance and high-fidelity numerical algorithms to solve computational challenges associated with various kinds of physical systems.
+My research focuses on high-performance computing for computer graphics, spanning physics-based simulation, generative AI, and AI agents. I develop efficient numerical algorithms and GPU systems for real-time simulation and fast generation, and study how AI agents can build correct and efficient high-performance graphics code.
 
 ## Research
+<div class='pub-tabs'>
+  <button type='button' class='pub-tab active' data-target='pub-selected'>Selected Publications</button>
+  <button type='button' class='pub-tab' data-target='pub-all'>All Publications</button>
+</div>
 <p>
   <div id='pubContainer'>
-    <div id='paper' style="display: flow-root;">
-      <div>
-        <img id="paperimg" src="/images/gpuphysbench-simulations.svg" alt="GPUPhysBench reference simulations in two rows and three columns: vortex rings, water drop, vortex street, jelly, snowball, and cloth"/>
+    <div id='pub-selected' class='pub-panel active'>
+      <div id='paper' style="display: flow-root;">
+        <div>
+          <img id="paperimg" src="/images/gpuphysbench-simulations.svg" alt="GPUPhysBench reference simulations in two rows and three columns: vortex rings, water drop, vortex street, jelly, snowball, and cloth"/>
+        </div>
+        <div id='paperinfo'>
+          <b>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</b><br />
+          <i>arXiv 2026</i><br />
+          <b>Yuchen Sun</b>, Jinjin He, Sinan Wang, Bo Zhu<br />
+          <a nonsmooth="1" href="https://arxiv.org/abs/2609.35639" class="">Paper</a>
+          <a nonsmooth="1" href="/projects/gpuphysbench/" class="">Project Page</a>
+        </div>
       </div>
-      <div id='paperinfo'>
-        <b>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</b><br />
-        <i>arXiv 2026</i><br />
-        <b>Yuchen Sun</b>, Jinjin He, Sinan Wang, Bo Zhu<br />
-        <a nonsmooth="1" href="https://arxiv.org/abs/2609.35639" class="">Paper</a>
-        <a nonsmooth="1" href="/projects/gpuphysbench/" class="">Project Page</a>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/lfm.jpg" alt="lfm"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Leapfrog Flow Maps for Real-Time Fluid Simulation</b><br />
+          <i>ACM Transactions on Graphics (SIGGRAPH 2025)</i><br />
+          <b>Yuchen Sun</b>, Junlin Li, Ruicheng Wang, Sinan Wang, Zhiqi Li, Bart G. Van Bloemen Waanders, Bo Zhu<br />
+          <a nonsmooth="1" href="https://dl.acm.org/doi/abs/10.1145/3731180" class="">Paper</a>
+          <a nonsmooth="1" href="https://github.com/yuchen-sun-cg/lfm" class="">Code</a>
+          <a nonsmooth="1" href="https://www.youtube.com/watch?v=-LK3ZDMByCE" class="">Video</a>
+          <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/lfm/" class="">Project Page</a>
+        </div>
       </div>
-    </div>
-    <br />
-    <div id='paper' style="display: flow-root;">
-      <div>
-        <img id="paperimg" src="/images/nhmo.jpg" alt="Neural Harmonic Measure Operator overview"/>
-      </div>
-      <div id='paperinfo'>
-        <b>Neural Harmonic Measure Operator</b><br />
-        <i>NeurIPS 2026</i><br />
-        Jinjin He, Sinan Wang, <b>Yuchen Sun</b>, Bo Zhu<br />
-        <a nonsmooth="1" href="https://arxiv.org/pdf/2609.35752" class="">Paper</a>
-        <a nonsmooth="1" href="https://github.com/jinjinhe2001/NHMO-Neural-Harmonic-Measure-Operator" class="">Code</a>
-        <a nonsmooth="1" href="https://jinjinhe2001.github.io/nhmo/" class="">Project Page</a>
-      </div>
-    </div>
-    <br />
-    <div id='paper' style="display: flow-root;">
-      <div>
-        <img id="paperimg" src="/images/hamiltonian-waves.jpg" alt="Coupled nonlinear surface waves and three-dimensional fluid flow"/>
-      </div>
-      <div id='paperinfo'>
-        <b>Hamiltonian Two-Way Coupling of Nonlinear Waves and 3D Flows</b><br />
-        <i>ACM Transactions on Graphics (SIGGRAPH Asia 2026)</i><br />
-        Sinan Wang*, Ruicheng Wang*, Taiyuan Zhang, Fan Feng, Jinjin He, <b>Yuchen Sun</b>, Zhiqi Li, Bo Zhu<br />
-        <a nonsmooth="1" href="https://arxiv.org/pdf/2608.25203" class="">Paper</a>
-        <a nonsmooth="1" href="https://github.com/swang3081/Hamiltonian-Two-Way-Coupling-of-Nonlinear-Waves-and-3D-Flows" class="">Code</a>
-        <a nonsmooth="1" href="https://youtu.be/4OmikmRc6VI" class="">Video</a>
-        <a nonsmooth="1" href="https://hamwave.sinanw.com/" class="">Project Page</a>
-      </div>
-    </div>
-    <br />
-    <div id='paper' style="display: flow-root;">
-      <div>
-        <img id="paperimg" src="/images/long-short-flow-maps.jpg" alt="Image generation results using unified long-short flow maps"/>
-      </div>
-      <div id='paperinfo'>
-        <b>Unified Long-Short Flow Maps for Fast Generation</b><br />
-        <i>SIGGRAPH Asia 2026 (Conference Papers)</i><br />
-        Zhiqi Li, Jinjin He, Duowen Chen, Ruicheng Wang, Shenyifan Lu, Yuxuan Liao, <b>Yuchen Sun</b>, Sinan Wang, Bo Zhu<br />
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/cfm.png" alt="cfm"/>
+        </div>
+        <div id='paperinfo'>
+          <b>A Few-Step Generative Model on Cumulative Flow Maps</b><br />
+          <i>ACM Transactions on Graphics (SIGGRAPH 2026)</i><br />
+          Zhiqi Li*, Duowen Chen*, <b>Yuchen Sun*</b>, Bo Zhu<br />
+          <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3811380" class="">Paper</a>
+        </div>
       </div>
     </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/efm.png" alt="efm"/>
+    <div id='pub-all' class='pub-panel'>
+      <div id='paper' style="display: flow-root;">
+        <div>
+          <img id="paperimg" src="/images/gpuphysbench-simulations.svg" alt="GPUPhysBench reference simulations in two rows and three columns: vortex rings, water drop, vortex street, jelly, snowball, and cloth"/>
+        </div>
+        <div id='paperinfo'>
+          <b>GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation</b><br />
+          <i>arXiv 2026</i><br />
+          <b>Yuchen Sun</b>, Jinjin He, Sinan Wang, Bo Zhu<br />
+          <a nonsmooth="1" href="https://arxiv.org/abs/2609.35639" class="">Paper</a>
+          <a nonsmooth="1" href="/projects/gpuphysbench/" class="">Project Page</a>
+        </div>
       </div>
-      <div id='paperinfo'>
-        <b>Trajectory Consistency for One-Step Generation on Euler Mean Flows</b><br />
-        <i>ICML 2026</i><br />
-        Zhiqi Li, <b>Yuchen Sun</b>, Duowen Chen, Jinjin He, Bo Zhu<br />
-        <a nonsmooth="1" href="https://arxiv.org/pdf/2602.02571" class="">Paper</a>
+      <br />
+      <div id='paper' style="display: flow-root;">
+        <div>
+          <img id="paperimg" src="/images/nhmo.jpg" alt="Neural Harmonic Measure Operator overview"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Neural Harmonic Measure Operator</b><br />
+          <i>NeurIPS 2026</i><br />
+          Jinjin He, Sinan Wang, <b>Yuchen Sun</b>, Bo Zhu<br />
+          <a nonsmooth="1" href="https://arxiv.org/pdf/2609.35752" class="">Paper</a>
+          <a nonsmooth="1" href="https://github.com/jinjinhe2001/NHMO-Neural-Harmonic-Measure-Operator" class="">Code</a>
+          <a nonsmooth="1" href="https://jinjinhe2001.github.io/nhmo/" class="">Project Page</a>
+        </div>
       </div>
-    </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/cfm.png" alt="cfm"/>
+      <br />
+      <div id='paper' style="display: flow-root;">
+        <div>
+          <img id="paperimg" src="/images/hamiltonian-waves.jpg" alt="Coupled nonlinear surface waves and three-dimensional fluid flow"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Hamiltonian Two-Way Coupling of Nonlinear Waves and 3D Flows</b><br />
+          <i>ACM Transactions on Graphics (SIGGRAPH Asia 2026)</i><br />
+          Sinan Wang*, Ruicheng Wang*, Taiyuan Zhang, Fan Feng, Jinjin He, <b>Yuchen Sun</b>, Zhiqi Li, Bo Zhu<br />
+          <a nonsmooth="1" href="https://arxiv.org/pdf/2608.25203" class="">Paper</a>
+          <a nonsmooth="1" href="https://github.com/swang3081/Hamiltonian-Two-Way-Coupling-of-Nonlinear-Waves-and-3D-Flows" class="">Code</a>
+          <a nonsmooth="1" href="https://youtu.be/4OmikmRc6VI" class="">Video</a>
+          <a nonsmooth="1" href="https://hamwave.sinanw.com/" class="">Project Page</a>
+        </div>
       </div>
-      <div id='paperinfo'>
-        <b>A Few-Step Generative Model on Cumulative Flow Maps</b><br />
-        <i>ACM Transactions on Graphics (SIGGRAPH 2026)</i><br />
-        Zhiqi Li*, Duowen Chen*, <b>Yuchen Sun*</b>, Bo Zhu<br />
-        <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3811380" class="">Paper</a>
+      <br />
+      <div id='paper' style="display: flow-root;">
+        <div>
+          <img id="paperimg" src="/images/long-short-flow-maps.jpg" alt="Image generation results using unified long-short flow maps"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Unified Long-Short Flow Maps for Fast Generation</b><br />
+          <i>SIGGRAPH Asia 2026 (Conference Papers)</i><br />
+          Zhiqi Li, Jinjin He, Duowen Chen, Ruicheng Wang, Shenyifan Lu, Yuxuan Liao, <b>Yuchen Sun</b>, Sinan Wang, Bo Zhu<br />
+        </div>
       </div>
-    </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/fsi.jpg" alt="fsi"/>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/efm.png" alt="efm"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Trajectory Consistency for One-Step Generation on Euler Mean Flows</b><br />
+          <i>ICML 2026</i><br />
+          Zhiqi Li, <b>Yuchen Sun</b>, Duowen Chen, Jinjin He, Bo Zhu<br />
+          <a nonsmooth="1" href="https://arxiv.org/pdf/2602.02571" class="">Paper</a>
+        </div>
       </div>
-      <div id='paperinfo'>
-        <b>Penetration-free Solid-Fluid Interaction on Shells and Rods</b><br />
-        <i>IEEE TVCG 2026</i><br />
-        <b>Yuchen Sun*</b>, Jinyuan Liu*, Yin Yang, Chenfanfu Jiang, Minchen Li, Bo Zhu<br />
-        <a nonsmooth="1" href="https://www.computer.org/csdl/journal/tg/2026/07/11434881/2ePhjfoaPUk" class="">Paper</a>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/cfm.png" alt="cfm"/>
+        </div>
+        <div id='paperinfo'>
+          <b>A Few-Step Generative Model on Cumulative Flow Maps</b><br />
+          <i>ACM Transactions on Graphics (SIGGRAPH 2026)</i><br />
+          Zhiqi Li*, Duowen Chen*, <b>Yuchen Sun*</b>, Bo Zhu<br />
+          <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3811380" class="">Paper</a>
+        </div>
       </div>
-    </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/fmf.png" alt="fmf"/>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/fsi.jpg" alt="fsi"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Penetration-free Solid-Fluid Interaction on Shells and Rods</b><br />
+          <i>IEEE TVCG 2026</i><br />
+          <b>Yuchen Sun*</b>, Jinyuan Liu*, Yin Yang, Chenfanfu Jiang, Minchen Li, Bo Zhu<br />
+          <a nonsmooth="1" href="https://www.computer.org/csdl/journal/tg/2026/07/11434881/2ePhjfoaPUk" class="">Paper</a>
+        </div>
       </div>
-      <div id='paperinfo'>
-        <b>Functional Mean Flow in Hilbert Space</b><br />
-        <i>CVPR 2026</i><br />
-        Zhiqi Li, <b>Yuchen Sun</b>, Greg Turk, Bo Zhu<br />
-        <a nonsmooth="1" href="https://openaccess.thecvf.com/content/CVPR2026/papers/Li_Functional_Mean_Flow_in_Hilbert_Space_CVPR_2026_paper.pdf" class="">Paper</a>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/fmf.png" alt="fmf"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Functional Mean Flow in Hilbert Space</b><br />
+          <i>CVPR 2026</i><br />
+          Zhiqi Li, <b>Yuchen Sun</b>, Greg Turk, Bo Zhu<br />
+          <a nonsmooth="1" href="https://openaccess.thecvf.com/content/CVPR2026/papers/Li_Functional_Mean_Flow_in_Hilbert_Space_CVPR_2026_paper.pdf" class="">Paper</a>
+        </div>
       </div>
-    </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/lfm.jpg" alt="lfm"/>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/lfm.jpg" alt="lfm"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Leapfrog Flow Maps for Real-Time Fluid Simulation</b><br />
+          <i>ACM Transactions on Graphics (SIGGRAPH 2025)</i><br />
+          <b>Yuchen Sun</b>, Junlin Li, Ruicheng Wang, Sinan Wang, Zhiqi Li, Bart G. Van Bloemen Waanders, Bo Zhu<br />
+          <a nonsmooth="1" href="https://dl.acm.org/doi/abs/10.1145/3731180" class="">Paper</a>
+          <a nonsmooth="1" href="https://github.com/yuchen-sun-cg/lfm" class="">Code</a>
+          <a nonsmooth="1" href="https://www.youtube.com/watch?v=-LK3ZDMByCE" class="">Video</a>
+          <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/lfm/" class="">Project Page</a>
+        </div>
       </div>
-      <div id='paperinfo'>
-        <b>Leapfrog Flow Maps for Real-Time Fluid Simulation</b><br />
-        <i>ACM Transactions on Graphics (SIGGRAPH 2025)</i><br />
-        <b>Yuchen Sun</b>, Junlin Li, Ruicheng Wang, Sinan Wang, Zhiqi Li, Bart G. Van Bloemen Waanders, Bo Zhu<br />
-        <a nonsmooth="1" href="https://dl.acm.org/doi/abs/10.1145/3731180" class="">Paper</a>
-        <a nonsmooth="1" href="https://github.com/yuchen-sun-cg/lfm" class="">Code</a>
-        <a nonsmooth="1" href="https://www.youtube.com/watch?v=-LK3ZDMByCE" class="">Video</a>
-        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/lfm/" class="">Project Page</a>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/vpfm.jpg" alt="vpfm"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Fluid Simulation on Vortex Particle Flow Maps</b><br />
+          <i>ACM Transactions on Graphics (SIGGRAPH 2025)</i><br />
+          Sinan Wang, Junwei Zhou, Fan Feng, Zhiqi Li, <b>Yuchen Sun</b>, Duowen Chen, Greg Turk, Bo Zhu<br />
+          <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3731198" class="">Paper</a>
+          <a nonsmooth="1" href="https://github.com/pfm-gatech/VPFM" class="">Code</a>
+          <a nonsmooth="1" href="https://www.youtube.com/watch?v=8DukQvmr2EI" class="">Video</a>
+          <a nonsmooth="1" href="https://vpfm.sinanw.com/" class="">Project Page</a>
+        </div>
       </div>
-    </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/vpfm.jpg" alt="vpfm"/>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/neural_fluid.png" alt="neural_fluid"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Neural Fluidic System Design and Control with Differentiable Simulation</b><br />
+          <i>NeurIPS 2024</i><br />
+          Yifei Li, <b>Yuchen Sun</b>, Pingchuan Ma, Eftychios Sifakis, Tao Du, Bo Zhu, Wojciech Matusik<br />
+          <a nonsmooth="1" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/9a379c1b05793d1c42dc832269834515-Paper-Conference.pdf" class="">Paper</a>
+          <a nonsmooth="1" href="https://people.csail.mit.edu/liyifei/publication/neuralfluid/" class="">Project Page</a>
+        </div>
       </div>
-      <div id='paperinfo'>
-        <b>Fluid Simulation on Vortex Particle Flow Maps</b><br />
-        <i>ACM Transactions on Graphics (SIGGRAPH 2025)</i><br />
-        Sinan Wang, Junwei Zhou, Fan Feng, Zhiqi Li, <b>Yuchen Sun</b>, Duowen Chen, Greg Turk, Bo Zhu<br />
-        <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3731198" class="">Paper</a>
-        <a nonsmooth="1" href="https://github.com/pfm-gatech/VPFM" class="">Code</a>
-        <a nonsmooth="1" href="https://www.youtube.com/watch?v=8DukQvmr2EI" class="">Video</a>
-        <a nonsmooth="1" href="https://vpfm.sinanw.com/" class="">Project Page</a>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/igfm.jpg" alt="igfm"/>
+        </div>
+        <div id='paperinfo'>
+          <b>An Impulse Ghost Fluid Method for Simulating Two-Phase Flows</b><br />
+          <i>ACM Transactions on Graphics (SIGGRAPH Asia 2024)</i><br />
+          <b>Yuchen Sun</b>, Linglai Chen, Weiyuan Zeng, Tao Du, Shiying Xiong, Bo Zhu<br />
+          <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3687963" class="">Paper</a>
+          <a nonsmooth="1" href="https://www.youtube.com/watch?v=MbEyyH2UB3s" class="">Video</a>
+          <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/igfm/" class="">Project Page</a>
+        </div>
       </div>
-    </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/neural_fluid.png" alt="neural_fluid"/>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/pfm.png" alt="pfm"/>
+        </div>
+        <div id='paperinfo'>
+          <b>Eulerian-Lagrangian Fluid Simulation on Particle Flow Maps</b><br />
+          <i>ACM Transactions on Graphics (SIGGRAPH 2024)</i><br />
+          Junwei Zhou, Duowen Chen, Molin Deng, Yitong Deng, <b>Yuchen Sun</b>, Sinan Wang, Shiying Xiong, Bo Zhu<br />
+          <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3658180" class="">Paper</a>
+          <a nonsmooth="1" href="https://www.youtube.com/watch?v=aErgFhxil7o" class="">Video</a>
+          <a nonsmooth="1" href="https://zjw49246.github.io/projects/pfm/" class="">Project Page</a>
+        </div>
       </div>
-      <div id='paperinfo'>
-        <b>Neural Fluidic System Design and Control with Differentiable Simulation</b><br />
-        <i>NeurIPS 2024</i><br />
-        Yifei Li, <b>Yuchen Sun</b>, Pingchuan Ma, Eftychios Sifakis, Tao Du, Bo Zhu, Wojciech Matusik<br />
-        <a nonsmooth="1" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/9a379c1b05793d1c42dc832269834515-Paper-Conference.pdf" class="">Paper</a>
-        <a nonsmooth="1" href="https://people.csail.mit.edu/liyifei/publication/neuralfluid/" class="">Project Page</a>
-      </div>
-    </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/igfm.jpg" alt="igfm"/>
-      </div>
-      <div id='paperinfo'>
-        <b>An Impulse Ghost Fluid Method for Simulating Two-Phase Flows</b><br />
-        <i>ACM Transactions on Graphics (SIGGRAPH Asia 2024)</i><br />
-        <b>Yuchen Sun</b>, Linglai Chen, Weiyuan Zeng, Tao Du, Shiying Xiong, Bo Zhu<br />
-        <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3687963" class="">Paper</a>
-        <a nonsmooth="1" href="https://www.youtube.com/watch?v=MbEyyH2UB3s" class="">Video</a>
-        <a nonsmooth="1" href="https://yuchen-sun-cg.github.io/projects/igfm/" class="">Project Page</a>
-      </div>
-    </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/pfm.png" alt="pfm"/>
-      </div>
-      <div id='paperinfo'>
-        <b>Eulerian-Lagrangian Fluid Simulation on Particle Flow Maps</b><br />
-        <i>ACM Transactions on Graphics (SIGGRAPH 2024)</i><br />
-        Junwei Zhou, Duowen Chen, Molin Deng, Yitong Deng, <b>Yuchen Sun</b>, Sinan Wang, Shiying Xiong, Bo Zhu<br />
-        <a nonsmooth="1" href="https://dl.acm.org/doi/10.1145/3658180" class="">Paper</a>
-        <a nonsmooth="1" href="https://www.youtube.com/watch?v=aErgFhxil7o" class="">Video</a>
-        <a nonsmooth="1" href="https://zjw49246.github.io/projects/pfm/" class="">Project Page</a>
-      </div>
-    </div>
-    <br />
-    <div id='paper'>
-      <div>
-        <img id="paperimg" src="../images/magnetic_mpm.jpg" alt="pfm"/>
-      </div>
-      <div id='paperinfo'>
-        <b>A Material Point Method for Nonlinearly Magnetized Materials</b><br />
-        <i>ACM Transactions on Graphics (SIGGRAPH Asia 2021)</i><br />
-        <b>Yuchen Sun*</b>, Xingyu Ni*, Bo Zhu, Bin Wang, Baoquan Chen<br />
-        <a nonsmooth="1" href="https://dl.acm.org/doi/abs/10.1145/3478513.3480541" class="">Paper</a>
-        <a nonsmooth="1" href="https://www.youtube.com/watch?v=2zqJ1wvverA" class="">Video</a>
+      <br />
+      <div id='paper'>
+        <div>
+          <img id="paperimg" src="../images/magnetic_mpm.jpg" alt="pfm"/>
+        </div>
+        <div id='paperinfo'>
+          <b>A Material Point Method for Nonlinearly Magnetized Materials</b><br />
+          <i>ACM Transactions on Graphics (SIGGRAPH Asia 2021)</i><br />
+          <b>Yuchen Sun*</b>, Xingyu Ni*, Bo Zhu, Bin Wang, Baoquan Chen<br />
+          <a nonsmooth="1" href="https://dl.acm.org/doi/abs/10.1145/3478513.3480541" class="">Paper</a>
+          <a nonsmooth="1" href="https://www.youtube.com/watch?v=2zqJ1wvverA" class="">Video</a>
+        </div>
       </div>
     </div>
   </div>
 </p>
+<script>
+  document.querySelectorAll('.pub-tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.pub-tab').forEach(function (t) { t.classList.toggle('active', t === tab); });
+      document.querySelectorAll('.pub-panel').forEach(function (p) { p.classList.toggle('active', p.id === tab.dataset.target); });
+    });
+  });
+</script>
